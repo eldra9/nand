@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAND Trading PLC | Plastic Raw Materials Importer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1a2b4c; /* Matches the logo blue */
+        }
+        .bg-navy { background-color: var(--navy); }
+        .text-navy { color: var(--navy); }
+        .border-navy { border-color: var(--navy); }
+        html { scroll-behavior: smooth; }
+        
+        /* UPDATE THIS SECTION */
+        .hero-gradient {
+            background: linear-gradient(rgba(18, 30, 54, 0.88), rgba(18, 30, 54, 0.88)), 
+                        url('background.png'); /* <-- Replace 'your-image-name.jpg' with your image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+    <nav class="fixed w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            
+            <a href="#home" class="flex items-center">
+                <img src="photo_2026-07-07_14-17-39.jpg" alt="NAND Trading PLC Logo" 
+                     class="h-10 md:h-14 w-auto mr-2 transition-all duration-300">
+            </a>
+            
+            <div class="hidden md:flex space-x-4 font-semibold items-center">
+                <a href="#home" class="px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-navy transition duration-300">Home</a>
+                <a href="#products" class="px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-navy transition duration-300">Products</a>
+                <a href="#about" class="px-4 py-2 text-gray-700 rounded-lg hover:bg-gray-100 hover:text-navy transition duration-300">About Us</a>
+                <a href="#contact" class="bg-navy text-white px-5 py-2 rounded-lg hover:bg-blue-900 shadow-sm hover:shadow transition duration-300">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-gradient h-screen flex items-center justify-center text-center text-white px-4">
+        <div data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 uppercase tracking-wider">Nand Trading PLC</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-light">
+                Premium Importers of High-Quality Plastic Raw Materials. Supporting Ethiopia's industrial growth with global standards.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#products" class="bg-white text-navy px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition">View Products</a>
+                <a href="#contact" class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-navy transition">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-200 border-b border-gray-300">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div data-aos="zoom-in">
+                    <i class="fas fa-handshake text-4xl text-navy mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">TRUST</h3>
+                    <p class="text-gray-600">Built on years of reliable partnerships and transparent business ethics.</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-award text-4xl text-navy mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">QUALITY</h3>
+                    <p class="text-gray-600">Supplying only the highest grade of polymer resins for manufacturing.</p>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-chart-line text-4xl text-navy mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">GROWTH</h3>
+                    <p class="text-gray-600">Empowering local industries to scale through consistent supply chains.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-navy">Our Materials</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition" data-aos="fade-up">
+                    <img src="pp.jpg" alt="PP" class="h-48 w-full object-cover cursor-pointer hover:opacity-90 transition duration-200" onclick="openLightbox(this)">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">PP (Polypropylene)</h3>
+                        <p class="text-gray-600 mb-4">High-clarity, versatile pellets used for packaging and consumer goods.</p>
+                        <button class="text-navy font-bold hover:underline">Learn More →</button>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="100">
+                    <img src="copp.jpg" alt="COPP" class="h-48 w-full object-cover cursor-pointer hover:opacity-90 transition duration-200" onclick="openLightbox(this)">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">COPP (Copolymer)</h3>
+                        <p class="text-gray-600 mb-4">Excellent impact resistance and durability for heavy-duty industrial applications.</p>
+                        <button class="text-navy font-bold hover:underline">Learn More →</button>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="200">
+                    <img src="hhh.jpg" alt="HDPE" class="h-48 w-full object-cover cursor-pointer hover:opacity-90 transition duration-200" onclick="openLightbox(this)">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">HDPE</h3>
+                        <p class="text-gray-600 mb-4">High-density material perfect for piping, bottles, and rugged containers.</p>
+                        <button class="text-navy font-bold hover:underline">Learn More →</button>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition" data-aos="fade-up">
+                    <img src="lldpe-plastic-granule.jpg" alt="LLDPE" class="h-48 w-full object-cover cursor-pointer hover:opacity-90 transition duration-200" onclick="openLightbox(this)">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">LLDPE</h3>
+                        <p class="text-gray-600 mb-4">Superior flexibility and tensile strength for high-performance film applications.</p>
+                        <button class="text-navy font-bold hover:underline">Learn More →</button>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="100">
+                    <img src="p1.jpg" alt="PET" class="h-48 w-full object-cover cursor-pointer hover:opacity-90 transition duration-200" onclick="openLightbox(this)">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">PET</h3>
+                        <p class="text-gray-600 mb-4">Grade-A PET for food-safe beverage containers and synthetic fibers.</p>
+                        <button class="text-navy font-bold hover:underline">Learn More →</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="fixed inset-0 bg-black/80 z-50 hidden flex items-center justify-center opacity-0 transition-opacity duration-300" onclick="closeLightbox()">
+        <button class="absolute top-5 right-5 text-white text-4xl font-light hover:text-gray-300 focus:outline-none" onclick="closeLightbox()">&times;</button>
+        <div class="max-w-4xl max-h-[85vh] p-4 flex flex-col items-center" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="Popup Preview" class="max-w-full max-h-[75vh] object-contain rounded shadow-2xl">
+            <p id="lightbox-caption" class="text-white text-lg mt-4 font-medium tracking-wide"></p>
+        </div>
+    </div>
+
+    <section id="about" class="py-20 bg-navy text-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-4xl font-bold mb-6">Pioneering Industrial Supply in Addis Ababa</h2>
+                <p class="text-gray-300 mb-6 leading-relaxed">
+                    At Nand PLC, we are dedicated to supplying high-quality industrial raw materials to businesses across Ethiopia. We understand that reliable raw materials are essential for maintaining efficient production processes, consistent product quality, and long-term business success. For this reason, we focus on providing dependable products and professional service that meet the needs of manufacturers and industrial businesses.
+
+Our product range includes industrial raw materials such as PP (Polypropylene), HDPE (High-Density Polyethylene), LLDPE (Linear Low-Density Polyethylene), PET (Polyethylene Terephthalate), and COPP. These materials are sourced from trusted international suppliers in Saudi Arabia, Dubai, and China, allowing us to provide products with consistent quality and a dependable supply.
+
+At Nand PLC, we value the importance of building strong relationships with both our suppliers and customers. By working with reliable international partners, we strive to ensure that businesses have access to the raw materials they need when they need them. We are committed to maintaining high standards in the products we supply while providing responsive and professional customer service throughout the purchasing process.
+
+Our goal is to support industries by offering quality materials, competitive solutions, and reliable service that help businesses operate efficiently and confidently. We believe that consistency, reliability, and customer satisfaction are the foundation of long-term partnerships, and we continuously work to uphold these values in everything we do.
+
+As we continue to serve businesses across Ethiopia, Nand PLC remains committed to building trust through dependable supply, strong international partnerships, and a customer-focused approach. We aim to be a reliable source of industrial raw materials, helping our customers secure the products they need to support their operations and achieve sustainable business growth.
+                </p>
+            </div>
+            <div class="relative" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Warehouse" class="rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 bg-gray-50 rounded-lg italic shadow-sm">
+                    "We've been sourcing raw materials from Nand PLC for several months, and the experience has been excellent. The product quality is consistent, deliveries are on time, and their team is always professional and responsive. They're a company we can rely on."
+                    <p class="mt-4 font-bold not-italic">— Abebe Tadesse</p>
+                </div>
+                <div class="p-8 bg-gray-50 rounded-lg italic shadow-sm">
+                    "Working with Nand PLC has made our procurement process much easier. Their products meet our quality standards, and their customer service is outstanding. I would confidently recommend them to any business looking for a dependable supplier."
+                    <p class="mt-4 font-bold not-italic">— Sara Bekele</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-200 border-t border-gray-300">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-navy mb-4">Get In Touch</h2>
+                <p class="text-gray-600">Connect with our team in Addis Ababa for supply inquiries and orders.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="space-y-6" data-aos="fade-up">
+    <div class="flex items-start">
+        <i class="fas fa-map-marker-alt text-2xl text-navy mr-4 mt-1"></i>
+        <p>Bole Road, Woreda 03 House No. 1234<br>Addis Ababa, Ethiopia</p>
+    </div>
+    <div class="flex items-start">
+        <i class="fas fa-phone-alt text-2xl text-navy mr-4 mt-1"></i>
+        <div>
+            <p class="font-medium">+251 911 407884</p>
+            <p class="font-medium">+251 913 376984</p>
+            <p class="font-medium">+251 939 552600</p>
+        </div>
+    </div>
+    
+    <!-- Perfectly Centered Action Buttons -->
+<div class="pt-2 flex flex-col sm:flex-row sm:items-center gap-3">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Natanelabrha69@gmail.com&su=Supply%20Inquiry%20-%20Nand%20Trading" 
+       target="_blank" 
+       class="flex items-center justify-center text-center w-full sm:w-auto bg-navy text-white px-6 py-3 rounded-xl shadow-md hover:bg-blue-900 transition-all duration-300 font-semibold group h-12">
+        <i class="fas fa-envelope mr-3 text-lg transition-transform group-hover:scale-110"></i>
+        <span>Email Us</span>
+    </a>
+    
+    <a href="https://wa.me/251913376984" 
+       target="_blank"
+       class="flex items-center justify-center text-center w-full sm:w-auto bg-green-600 text-white px-6 py-3 rounded-xl shadow-md hover:bg-green-700 transition-all duration-300 font-semibold group h-12">
+        <i class="fab fa-whatsapp mr-3 text-xl transition-transform group-hover:scale-110"></i>
+        <span>Our WhatsApp</span>
+    </a>
+</div>
+</div>
+                
+                <div class="h-64 bg-gray-300 rounded-lg overflow-hidden border shadow-md" data-aos="fade-up" data-aos-delay="100">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15762.668744062828!2d38.7836371!3d8.9880159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8504060879e9%3A0xf65796a5c28f090b!2sBole%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1690000000000!5m2!1sen!2set" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-navy text-white py-10 border-t border-blue-900">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center items-center mb-6">
+                <span class="font-bold uppercase">Nand Trading PLC</span>
+            </div>
+            <p class="text-gray-400">© 2026 Nand Trading PLC. All Rights Reserved.</p>
+            <div class="mt-4 flex justify-center space-x-6 text-xl">
+                <a href="https://www.instagram.com/nandtradingplc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Lightbox Functions
+        function openLightbox(element) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+            
+            lightboxImg.src = element.src;
+            lightboxCaption.textContent = element.alt;
+            
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+            }, 10);
+            
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('opacity-0');
+            
+            setTimeout(() => {
+                lightbox.classList.remove('flex');
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
